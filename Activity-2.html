@@ -1,0 +1,78 @@
+<!--
+Activity 2: Employee Data 
+1. Table Structure: Inside the <body> tag, create an empty <table> 
+element to delineate the structure of the table. 
+
+2. Define Rows and Columns: Within the <table> element, delineate four 
+rows to represent the table's four rows. 
+
+3. Add Table Headings: In the first row (the table header row), insert four 
+table heading elements to label the columns: Id, First Name, Last Name, 
+Position, Salary. 
+
+4. Insert Table Data: Populate the remaining three rows (the table body 
+rows) with the data for each row as follows: 
+a. For the first row: Insert the data: 1, Johny, Dey, Software developer, 
+70000. 
+b. For the second row: Insert the data: 2, Jia, Smith, Project manager, 
+80000. 
+c. For the third row: Insert the data: 3, Manan, Bahal, UX Designer, 
+65000. 
+
+5. Merge Columns: In the second and third <td> elements of each row (for 
+First Name and Last Name), apply the colspan attribute to span the column 
+across two columns, effectively merging them into a single column.
+
+6. Preview: Save the HTML file and open it in a web browser to preview the 
+table with the defined structure, headings, and data.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+</head>
+<body>
+    <h1>Employee Data</h1>
+
+    <table border="2px" text-align="center">
+        
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="2">Johny </td>
+                <!--<td>Dey</td>-->
+                <td>Software developer</td>
+                <td>70000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">Jia</td>
+               <!--<td>Smith</td>-->
+                <td>Project manager</td>
+                <td>80000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td colspan="2"> Manan</td>
+              <!--<td>Bahal</td>-->
+                <td> UX Designer</td>
+                <td>65000</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>

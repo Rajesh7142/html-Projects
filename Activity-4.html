@@ -1,0 +1,250 @@
+<!--Activity 1: Recipe Sharing Website - HTML5 
+Plan Website Structure: 
+1. 
+Determine the sections your recipe sharing website will include (e.g., 
+homepage, recipe collection, individual recipe pages, user profiles, 
+search functionality, about us, contact). 
+2. Sketch or wireframe the layout and design of each section to visualise 
+the structure and content organisation. 
+HTML5 Structure: 
+1. 
+Write HTML5 code to create the basic layout of your recipe sharing 
+website, including structural elements like <header>, <nav>, <main>, 
+<section>, <footer>, etc. 
+2. Utilise semantic HTML5 tags such as <article>, <figure>, <aside>, 
+<details>, <summary>, etc., to properly structure your content for 
+accessibility and SEO. 
+Content Population: 
+1. 
+Populate each section with relevant content, such as recipe titles, 
+ingredients, instructions, images, ratings, and reviews. 
+2. Utilise HTML5 text formatting tags (<h1>, <h2>, <p>, etc.) to emphasise 
+key points and headings. 
+Interactive Elements: 
+1. 
+Incorporate interactive elements like buttons, dropdown menus, and 
+navigation bars using HTML5 tags and attributes (<button>, <nav>, <ul>, 
+<li>, etc.). 
+2. Implement forms for user interactions, such as submitting new recipes, 
+rating recipes, and leaving comments, using <form>, <input>, 
+<textarea>, etc. 
+Recipe Presentation: 
+1. 
+Use lists (<ul>, <ol>, <li>) to categorise and display recipes effectively, 
+allowing users to browse by cuisine, dietary preferences, or meal type. 
+1 | Page 
+2. Include images and multimedia within recipe pages to provide visual 
+cues and enhance the cooking experience, using <img> and <video> 
+tags.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Website</title>
+</head>
+<body>
+    <!-- Header section -->
+
+    <header>
+        <h1>Welcome to the Recipe Sharing Website</h1>
+   
+
+      <!-- Nav section -->
+       <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#submit">Submit Recipe</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+       </nav>
+    </header>
+
+    <!-- Main content Area-->
+
+    <main>
+    <!-- Home page section -->
+     <section id="home">
+        <h2>Featured Recipes</h2>
+        <article>
+            <figure>
+                <img src="example.jpg" alt="Delicious Dish" width="300">
+                <figcaption>Spaghetti Bolognese</figcaption>
+            </figure>
+            <p>Try this Classic Italian dish with fresh ingredients and rich meaty sause.</p>
+            <button>View Recipe</button>
+        </article>
+     </section>
+
+     <!-- Recipe collection section -->
+
+     <section id="recipes">
+        <h2>Recipe collection </h2>
+        <ul>
+            <li><a href="#recipe-1">Recipe 1: Spaghetti Bolognese</a></li>
+            <li><a href="#recipe-2">Recipe 2: Grilled Chicken Salad</a></li>
+            <li><a href="#recipe-3">Recipe 3: Chocolate Cake</a></li>
+        </ul>
+     </section>
+
+     <!-- Individual Recipe page -->
+
+     <section id="recipe-1">
+        <h2>Spaghetti Bolognese</h2>
+
+            <figure>
+                <img src="example.jpg" alt="Spaghetti Bolognese" width="300">
+                <figcaption>Spaghetti Bolognese with fresh herbs</figcaption>
+            </figure>
+       
+        <article>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Spaghetti - 200g</li>
+             <li>Minced meat - 300g</li>
+             <li>Tomato sauce - 1 cup</li>
+           <li>Garlic - 2 cloves</li>
+          <li>Olive oil - 2 tbsp</li>
+        </ul>
+
+        <h3> Instructions</h3>
+        <ol>
+            <li>Cook the spaghetti according to package instructions.</li>
+            <li>Heat olive oil in a pan and sauté garlic.</li>
+            <li>Add minced meat and cook until browned.</li>
+            <li>Pour in tomato sauce and simmer for 10 minutes.</li>
+            <li>Serve the sauce over spaghetti and enjoy.</li>
+        </ol>
+    </article>
+
+    <section id="recipe-2">
+        <h2> Grilled Chicken Salad</h2>
+
+        <figure>
+            <img src="example.jpg" alt="Grilled Chicken" width="300">
+            <figcaption>Grilled Chicken Salad</figcaption>
+        </figure>
+   
+    <article>
+    <h3>Ingredients</h3>
+    <ul>
+        <li>Spaghetti - 200g</li>
+         <li>Minced meat - 300g</li>
+         <li>Tomato sauce - 1 cup</li>
+       <li>Garlic - 2 cloves</li>
+      <li>Olive oil - 2 tbsp</li>
+    </ul>
+
+    <h3> Instructions</h3>
+    <ol>
+        <li>Cook the spaghetti according to package instructions.</li>
+        <li>Heat olive oil in a pan and sauté garlic.</li>
+        <li>Add minced meat and cook until browned.</li>
+        <li>Pour in tomato sauce and simmer for 10 minutes.</li>
+        <li>Serve the sauce over spaghetti and enjoy.</li>
+    </ol>
+</article>
+    </section>
+    <section id="recipe-3">
+        <h2>Chocolate Cake</h2>
+
+        <figure>
+            <img src="example.jpg" alt="Chocolate Cake" width="300">
+            <figcaption>Chocolate Cake</figcaption>
+        </figure>
+   
+    <article>
+    <h3>Ingredients</h3>
+    <ul>
+        <li>Spaghetti - 200g</li>
+         <li>Minced meat - 300g</li>
+         <li>Tomato sauce - 1 cup</li>
+       <li>Garlic - 2 cloves</li>
+      <li>Olive oil - 2 tbsp</li>
+    </ul>
+
+    <h3> Instructions</h3>
+    <ol>
+        <li>Cook the spaghetti according to package instructions.</li>
+        <li>Heat olive oil in a pan and sauté garlic.</li>
+        <li>Add minced meat and cook until browned.</li>
+        <li>Pour in tomato sauce and simmer for 10 minutes.</li>
+        <li>Serve the sauce over spaghetti and enjoy.</li>
+    </ol>
+</article>
+
+    </section>
+
+    <!-- User Interaction -->
+     <section>
+        <form action="">
+        <h3>Leave a Review</h3>
+        <label for="name">Name:</label>
+        <input type="text" name="text"> <br>
+        <label for="review">Your Review:</label><br>
+        <textarea name="userreview" id="review" rows="4" cols="40"></textarea> <br>
+        <button>Submit</button>
+     </form>
+       </section>
+     </section>
+
+     <!-- Submit recipe Form -->
+      <section id="submit">
+        <h3>Submit Your Recipe</h3>
+        <form action="">
+            <label for="title">Recipe Title:</label><br>
+            <input type="text" name="Recipe-name"><br>
+            <label for="ingredient">Ingredients:</label><br>
+            <textarea name="ingredient" id=""  rows="4" cols="50"></textarea> <br>
+            <label for="instruction">Instructions:</label><br>
+            <textarea name="instrction" id=""  rows="6" cols="50"></textarea> <br>
+            <label for="Image">Upload Image :</label><br>
+            <input type="file" name="file" id="file"><br>
+            <button>Submit Recipe</button>
+        </form>
+      </section>
+
+      <!-- About us-->
+       <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about cooking and sharing recipes with the world.</p>
+        <p>Discover,cook,and enjoy!</p>
+       </section>
+
+       <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="">
+            <label for="name">Name:</label> 
+            <input type="text"> <br>
+            <label for="mail">Email</label>
+            <input type="Email"> <br>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="6" cols="50"></textarea> <br>
+            <button>Submit</button>
+        </form>
+       </section>
+    </main>
+
+       <!-- Sidebar (Optional) -->
+    <aside>
+        <h3>Top Rated Recipes</h3>
+        <ul>
+            <li>Chocolate Cake</li>
+            <li>Grilled Chicken Salad</li>
+            <li>Pasta Primavera</li>
+        </ul>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Recipe Sharing Website | Follow us on Social Media</p>
+    </footer>
+
+   
+
+</body>
+</html>

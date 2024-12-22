@@ -1,0 +1,143 @@
+<!--
+: E-commerce Website- Shopify 
+1. 
+Plan Website Structure: 
+a. Decide on the sections your e-commerce website will include (e.g., 
+homepage, product catalogue, individual product pages, shopping 
+cart, checkout, about us, contact). 
+b. Sketch or wireframe the layout and design of each section to 
+visualise the structure and content organisation. 
+
+2. HTML Structure: 
+a. Write HTML code to create the basic layout of your e-commerce 
+website, including structural elements like <header>, <nav>, <main>, 
+<section>, <footer>, etc. 
+b. Use semantic HTML tags to properly structure your content for 
+accessibility. 
+
+3. Content Population: 
+a. Populate each section with relevant content, such as product 
+descriptions, images, prices, and other details. 
+b. Utilise HTML text formatting tags (<h1>, <h2>, <p>, etc.) to emphasise 
+key points and headings. 
+c. Include product listings and descriptions using appropriate HTML 
+elements and tags. 
+
+4. Interactive Elements: 
+a. Incorporate interactive elements like buttons, dropdown menus, 
+and navigation bars using HTML tags and attributes (<button>, 
+<nav>, <ul>, <li>, etc.). 
+b. Implement forms for user interactions, such as adding products to 
+the cart, updating quantities, and completing the checkout process. 
+
+5. Product Presentation: 
+a. Use lists (<ul>, <ol>, <li>) to categorise and display products 
+effectively, allowing customers to browse by product type, price 
+range, or other criteria. 
+b. Include images and multimedia to showcase products from 
+different angles or in use.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+</head>
+<body>
+    <!-- header section -->
+    <header class="header">
+        <h1>E-commerce Shopify</h1>
+        <p>Your one-stop online shop!</p>
+    </header>   
+
+    <!-- Navigation Bar -->
+
+        <nav class="nav-bar">
+            <ul class="sections">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Shopping Cart</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+   
+      <!-- Main Content -->
+    <main>
+        <!-- Homepage Section -->
+
+        <section id="home">
+            <h2>Welcome to Shopify E-commerce</h2>
+            <p>Discover amazing products at unbeatable prices.</p>
+        </section>
+
+        <!-- Product Catalogue Section -->
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-listing">
+                <div class="product-card">
+                    <img src="product1.jpg" alt="product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <br>
+                <div class="product-card">
+                    <img src="product2.jpg" alt="product 2">
+                    <h3>Product 2</h3>
+                    <p>$12.16</p>
+                    <button>Add to Cart</button>
+                </div> <br>
+                <div class="product-card">
+                    <img src="product3.jpg" alt="product 3">
+                    <h3>Product 3</h3>
+                    <p>$11.11</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping Cart section -->
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <form action="cart-form" class="cart-form">
+                <input type="text" placeholder="Product Name" required> <br>
+                <input type="number" placeholder="Quantity" required> <br>
+                <button type="Submit">Update cart</button>
+            </form>
+        </section>
+
+        <!-- About Us Section -->
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are passionate team dedicated to bringing you the
+                best shopping experience.
+            </p>
+        </section>
+
+        <!-- Contact Us -->
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="contact-us">
+                <input type="text" placeholder="Your name" required> <br>
+                <input type="Emain" placeholder="Your Email" required> <br>
+                <textarea name="Message" id="Message" rows="5" required></textarea> <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+      <!-- Footer Section -->
+
+      <footer>
+        <p>&copy; 2024 shopify E-commerce. All Rights Reserved.</p>
+      </footer>
+</body>
+</html>

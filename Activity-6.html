@@ -1,0 +1,191 @@
+<!--
+Fitness and Nutrition Website 
+
+1. Plan Website Structure: 
+● Determine the sections your fitness and nutrition website will include: 
+○ Homepage 
+○ Workout Programs 
+○ Nutrition Guides 
+○ Exercise Library 
+○ Success Stories/Testimonials 
+○ About Us 
+○ Contact 
+● Sketch or wireframe the layout and design of each section: 
+○ Homepage: Featured workouts, nutrition tips, success stories, 
+navigation menu. 
+○ Workout Programs: Detailed descriptions of different workout 
+plans, categorised by goals (e.g., weight loss, muscle gain). 
+○ Nutrition Guides: Information on healthy eating habits, meal 
+planning, and dietary recommendations. 
+○ Exercise Library: Demonstrations of various exercises with proper 
+form and technique. 
+○ Success Stories/Testimonials: Inspiring stories of individuals 
+achieving their fitness goals, before and after pictures. 
+○ About Us: Information about the website, its mission, and team 
+members. 
+○ Contact: Form for users to reach out with inquiries or feedback. 
+
+2 | Page 
+2. HTML5 Structure: 
+● Create the basic layout of your fitness and nutrition website: 
+○ Utilise structural elements like <header>, <nav>, <main>, 
+<section>, <footer>. 
+● Use semantic HTML5 tags such as <article>, <figure>, <aside>, 
+<details>, <summary> for better accessibility and SEO. 
+● Make use of tags for making tables and ordered and unordered lists. 
+
+3. Content Population: 
+● Populate each section with relevant content: 
+○ Workout program descriptions, nutrition guides, exercise 
+demonstrations, success stories, and contact information. 
+● Utilise HTML5 text formatting tags (<h1>, <h2>, <p>) for headings and 
+key points. 
+
+4. Interactive Elements: 
+● Incorporate interactive elements: 
+○ Buttons, dropdown menus, and navigation bars using HTML5 tags 
+and attributes (<button>, <nav>, <ul>, <li>). 
+● Implement forms for user interactions: 
+○ Contact form for inquiries or feedback using <form>, <input>, 
+<textarea>. 
+
+5. Multimedia Integration: 
+● Utilise multimedia elements: 
+○ Include images and videos showcasing workouts, exercises, 
+healthy meals, and success stories. 
+○ Embed videos demonstrating exercise techniques within the 
+Exercise Library section. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness and Nutrition Website</title>
+</head>
+<body>
+    <!-- Header section -->
+     <header class="header">
+        <h1> Fitness and Nutrition Hub.</h1>
+        <p>Your journey to health and fitness starts here!</p>
+        
+
+        <!-- Nav Section -->
+         <nav>
+            <ul>
+                <li><a href="#homepage">Home</a></li>
+                <li><a href="#workout-programs">Workout Programs</a></li>
+                <li><a href="#nutrition-guides">Nutrition Guides</a></li>
+                <li><a href="#Exercise-library">Exercise Library</a></li>
+                <li><a href="#success-stories">Success Stories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+         </nav>
+     </header>
+     
+
+     <!-- Main Contact -->
+     <main>
+
+        <!-- Homepage -->
+         <section id="home">
+            <h2>Welcome to  Fitness and Nutrition Hub</h2> <hr>
+            <p>Explorw our featured workouts, nutrition tips, and success stories to inspire your journey!</p>
+         </section>
+        
+
+         <!-- workout programs -->
+          <section id="workout-programs">
+            <h2>Workout Programs</h2> <hr>
+            <article>
+                <h3>Weight Loss program</h3>
+                <p>A comprehensive plan designed to help you shed extra pounds with a combination of cardio and strength training.</p>
+            </article>
+            <article>
+                <h3>muscle gain program</h3>
+                <p>Build strength and muscle mass with tailored workouts focusing on progressive overload techniques.</p>
+            </article>
+          </section>
+          
+
+          <!-- Nitrition-guides -->
+           <section id="nutrition-guides">
+            <h2>Nutrition Guides</h2> <hr>
+
+            <ul>
+                <li>Healtht eating habits</li>
+                <li>Meal planning</li>
+                <li>Dietary recommendations</li>
+            </ul>
+           </section>
+           
+
+           <!-- Exercise-library -->
+
+           <section id="ecercise-library">
+            <h2>Exercise Library</h2> <hr>
+            <article>
+                <h3>Squats</h3>
+                <img src="squats-demo.jpg" alt="Demonstration of Squats">
+                <details>
+                    <summary>Learn how to perfoem squats</summary>
+                    <p>Stand with your feet shoulder-width apart. Lower your body by bending your knees and hips, keeping your chest up. Return to the starting position.</p>
+                </details>
+            </article>
+
+            <article>
+                <h3>Push-Ups</h3>
+                <img src="puships-demo.jpg" alt="Dempnstrated of Pushups">
+                <details>
+                    <summary>Learn how to perform push-ups</summary>
+                    <p>>Get into a plank position. Lower your body until your chest nearly touches the floor, then push back up.</p>
+                </details>
+            </article>
+           </section>
+           
+
+           <!-- Success-Stories-->
+
+           <section id="success-stories">
+            <h2>Success Stories</h2> <hr>
+            <article class="success-story">
+                <h3>Jane's Transformation</h3>
+                <img src="success-story.jpg" alt="Before and After Picture">
+                <p>Jane lost 20 pounds in 3 months by following our weight loss program and healthy eating tips.</p>
+            </article>
+
+            <article class="sucess-story">
+                <h3>Rajesh Transformation</h3>
+                <img src="success-story.jpg" alt="Before and After Picture">
+                <p>Jane lost 20 pounds in 3 months by following our weight loss program and healthy eating tips.</p>
+            </article>
+           </section>
+
+           <!-- About Us -->
+
+           <section id="about">
+            <h2>About Us</h2> <hr>
+            <p>At Fitness and Nutrition Hub, we are passionate about helping individuals achieve their health and fitness goals. Our team of experts is dedicated to providing the best resources and support for your journey.</p>
+           </section>
+
+           <!-- Contact Us -->
+
+           <section id="contact">
+            <h2>Contact Us</h2> <hr>
+            <form action="contact-form">
+                <input type="text" placeholder="Your name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+           </section>
+     </main>
+
+     <!--  Footer section -->
+       <footer>
+        <p>&copy; 2024 Fitness and Nutrition Hub. All Rights Reserved.</p>
+       </footer>
+</body>
+</html>

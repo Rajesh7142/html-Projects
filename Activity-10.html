@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+</head>
+<body>
+    <h1>Employee Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Manager</td>
+                <td>$80,000</td>
+                <td><button onclick="alert('Viewing details for John Doe')">View Details</button></td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Jane</td>
+                <td>Smith</td>
+                <td>Developer</td>
+                <td>$70,000</td>
+                <td><button onclick="alert('Viewing details for Jane Smith')">View Details</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Add New Employee</h2>
+    <form action="#" method="post">
+        <label for="id">Employee ID:</label>
+        <input type="text" id="id" name="id" placeholder="Enter Employee ID" required> <br> <br>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name" required> <br> <br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required><br> <br>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" placeholder="Enter Position" required><br> <br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" placeholder="Enter Salary" required> <br> <br>
+
+        <button type="submit">Add Employee</button>
+    </form>
+</body>
+</html>

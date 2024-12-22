@@ -1,0 +1,169 @@
+<!--
+ Blogging Platform - WordPress 
+
+1. Plan Website Structure: 
+a. Decide on the sections your blogging platform will include (e.g., 
+homepage, blog posts, categories/tags, author pages, about us, 
+contact). 
+b. Sketch or wireframe the layout and design of each section to 
+visualise the structure and content organisation. 
+
+2. HTML Structure: 
+a. Write HTML code to create the basic layout of your blogging platform, 
+including structural elements like <header>, <nav>, <main>, <section>, 
+<footer>, etc. 
+b. Use semantic HTML tags to properly structure your content for accessibility. 
+
+3. Content Population: 
+a. Populate each section with relevant content, such as blog post titles, 
+excerpts, authors, publication dates, and categories/tags. 
+b. Utilise HTML text formatting tags (<h1>, <h2>, <p>, etc.) to emphasise key 
+points and headings. 
+c. Include featured images and multimedia within blog posts using 
+appropriate HTML elements and tags, such as <img> for images and 
+<video> for videos. 
+
+4. Interactive Elements: 
+a. Incorporate interactive elements like buttons, dropdown menus, and 
+navigation bars using HTML tags and attributes (<button>, <nav>, <ul>, 
+<li>, etc.). 
+b. Implement forms for user interactions, such as commenting on blog 
+posts and subscribing to newsletters. 
+
+5. Post Presentation: 
+a. Use lists (<ul>, <ol>, <li>) to categorise and display blog posts 
+effectively, allowing readers to browse by topic, author, or date. 
+b. Include images, videos, and embedded content within blog posts to 
+enhance engagement and illustrate concepts, utilising appropriate 
+media tags like <img>, <video>, <audio>, etc.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Platform</title>
+    <style>
+        header , footer {
+            background-color: #333;
+            text-align: center;
+            padding: 3px;
+            margin: 10px;
+            color: white;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            background-color: #4444;
+            padding: 0;
+            margin: 0;
+            justify-content: center;  
+        }
+        nav ul li{
+            margin: 0 25px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading Section -->
+     <header>
+        <h1>Welcome to My Blog</h1>
+        <p>Sharing thoughts, insights, and stories</p>
+     </header>
+
+     <!-- Navigation Bar -->
+
+     <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog-posts">Blog Posts</a></li>
+            <li><a href="#categories">categories</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+        </ul>
+     </nav>
+
+     <!-- Main Page -->
+
+     <main>
+        <!-- Homepage section-->
+         <section id="home">
+            <h2>Welcome to My Homepage</h2>
+            <p>Discover our latest blog posts, categories, and more!</p>
+         </section>
+
+         <!-- Blog Posts -->
+          <section id="blog-posts">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog=post">
+                <h3>Blog Post Title 1</h3>
+                <p><strong>Author 1</strong> | Published on <em>Dec 20,2024</em></p>
+                <img src="Bolg-1.jpg" alt="Blog Post 1">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, magni?. <a href="#read-more">Read more...</a></p>
+            </div>
+
+            <div class="bolg-post">
+                <h3>Blog Post Title 2</h3>
+                <p><strong>Author 2</strong> | Published on <em>Dec 10, 2024</em></p>
+                <img src="Blog-2.jpg" alt="Blog Post 2">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta?. <a href="#read-more">Read more....</a></p>
+            </div>
+          </section>
+
+          <!-- Categories Section -->
+           <section id="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li>Technology</li>
+                <li>Health & Wellness</li>
+                <li>Travel</li>
+                <li>Personal Finance</li>
+                <li>Eduaction</li>
+                <li>Movies</li>
+            </ul>
+           </section>
+
+           <!-- About Us Section-->
+
+           <section id="about">
+            <h2>About Us</h2>
+            <p>We are team of passionate writers sharing our knowledge
+                 and experiences with the world.
+            </p>
+           </section>
+
+           <!-- Contact Us Section -->
+
+           <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="comment-form">
+                <input type="text" placeholder="Your Name" required> <br>
+                <input type="Email" placeholder="Your Email" required> <br>
+                <textarea name="Message" id="Message" rows="5" required></textarea> <br>
+                <button type="submit">Submit</button>
+            </form>
+           </section>
+
+           <!-- NewsLetter Subscription -->
+            <section>
+                <h2>Subscribe to Our NewsLetter</h2>
+                <form action="subscribe-form">
+                    <input type="email" placeholder="Enter your email" required><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+     </main>
+
+     <!-- Footer Section -->
+      <footer>
+        <p>&copy; 2024 Blogging Platform. All Rights Reserved.</p>
+      </footer>
+
+</body>
+</html>
